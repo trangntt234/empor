@@ -41,6 +41,14 @@
                   <h2><?=$products->ProductName ?></h2>
                   <h3 class="top10"><?=$products->Price ?></h3>
                   <p class="top30 bottom30"><?=$products->Description ?></p>
+                  <div class="top30 bottom30">Size:</div>
+                  <div>
+                    <select name="size">
+                      <option value="<?=$products->Size ?>">
+                        
+                      </option>
+                    </select>  
+                  </div>
                   <a class="btn btn_colored btn_rounded button_moema icon-drop" href="#."> <i class="icon-icons102"></i> Add to Cart</a>
                </div>
             </div>

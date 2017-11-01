@@ -118,9 +118,9 @@
           </li> -->
         <div class="cols">
           <ul class="empr_nav">
-            <li><a href="#."><i class="icon-heart3"></i></a></li>
+            <!-- <li><a href="#."><i class="icon-heart3"></i></a></li> -->
             <li class="search_btn"><i class="icon-icons185"></i></li>
-            <li><a href="#."><i class="icon-icons9"></i></a></li>
+            <!-- <li><a href="#."><i class="icon-icons9"></i></a></li> -->
             <li><a href="javascript:void(0)" class="hamburger is-closed" data-toggle="offcanvas"><i class="icon-icons102"></i></a>
             </li>
           </ul>

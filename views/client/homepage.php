@@ -202,7 +202,7 @@
             <div class="ptags"><span class="hot"> Hot </span></div>
             <img src="<?php echo $p->Image ?>"  >
             <div class="shop_buttons">
-             <a class="add_emp" href=""> <i class="icon-icons102"></i> add to bag </a>
+             <a class="add_emp" href="<?= getUrl('')?>"> <i class="icon-icons102"></i> add to bag </a>
              <a class="ext_emp" href="<?php echo getUrl('product-detail') ?>&id=<?php echo $p->ProductID ?>" > <i class="icon-expand"></i></a>
             </div>
           </div>
