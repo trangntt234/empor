@@ -50,7 +50,7 @@
 				var_dump($ex->getMessage());die;
 			}
 		}
-		public function select
+		
 		public function delete(){
 			$this->queryBuilder = "delete from $this->tableName where id = $this->id";
 			$stmt = $this->connect->prepare($this->queryBuilder);
