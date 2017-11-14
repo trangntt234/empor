@@ -5,6 +5,7 @@
 require_once 'controllers/HomeController.php';
 require_once 'controllers/ProductController.php';
 require_once 'controllers/UserController.php';
+require_once 'controllers/CartController.php';
 class CustomRoute
 {
 	static function clientRoute($url)
@@ -37,6 +38,10 @@ class CustomRoute
 			case 'save-register':
 				$ctl = new UserController();
 				$ctl->save_register();
+				break;
+			case 'add-to-cart':
+				$ctl = new CartController();
+				$ctl->addToCart();
 				break;
 			default:
 				echo "<h1>Not found!</h1>";

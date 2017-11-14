@@ -11,15 +11,28 @@ class Product extends BaseModel
 		parent::__construct();
 	}*/
 	public function selectSize($id){
-			$sql = "SELECT *
-							FROM products
-							JOIN product_attributes ON products.ProductID = product_attributes.ProductID
-							JOIN attribute_values ON product_attributes.AttributeValueID = attribute_values.AttributeValueID
-							JOIN attributes ON attributes.AttributeID = attribute_values.AttributeID
-							where products.ProductID = $id";
-			$stmt = $this->connect->prepare($sql);
-			return $stmt->fetchAll();
-			
-		}
+		$sql = "SELECT attribute_values.Value
+						FROM products
+						JOIN product_attributes ON products.ProductID = product_attributes.ProductID
+						JOIN attribute_values ON product_attributes.AttributeValueID = attribute_values.AttributeValueID
+						JOIN attributes ON attributes.AttributeID = attribute_values.AttributeID
+						where products.ProductID = $id and attributes.AttributeName = 'size' ";
+		$stmt = $this->connect->prepare($sql);
+		$stmt->execute();
+		$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($this));
+		return $rs;
+	}
+	public function selectColor($id){
+		$sql = "SELECT attribute_values.Value
+						FROM products
+						JOIN product_attributes ON products.ProductID = product_attributes.ProductID
+						JOIN attribute_values ON product_attributes.AttributeValueID = attribute_values.AttributeValueID
+						JOIN attributes ON attributes.AttributeID = attribute_values.AttributeID
+						where products.ProductID = $id and attributes.AttributeName = 'color' ";
+		$stmt = $this->connect->prepare($sql);
+		$stmt->execute();
+		$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($this));
+		return $rs;
+	}
 }
 ?>

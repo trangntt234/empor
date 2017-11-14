@@ -34,7 +34,7 @@ class UserController
 		$comfirmPassword = $_POST['comfirmPassword'];
 		$address = $_POST['address'];
 		$gender = $_POST['gender'];
-		$user = User::all();
+		$user = User::all();	
 		foreach ($user as $u) {
 			if($email == $u->Email){
 				$message = "Email đã tồn tại";
@@ -68,6 +68,9 @@ class UserController
 			$models->Address = $address;
 			$models->Gender = $gender;
 			$models = $models->insert();
+			/*$u1 = User::findID($email);*/
+			$id = $u1->UserID;
+			/*$u1->addUserRole($id);*/
 			$_SESSION['user'] = [
 				'name' => $name
 			];

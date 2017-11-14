@@ -20,3 +20,4 @@
 <script src="js/revolution.extension.slideanims.min.js"></script>
 <script src="js/revolution.extension.video.min.js"></script>
 <script src="js/functions.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>

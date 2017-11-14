@@ -1,6 +1,7 @@
 <?php
   include_once 'sub/header.php';
 ?>
+<title>Empor </title>
 <!-- Slider End -->
 <!-- Body -->
 <!-- <div>
@@ -28,29 +29,40 @@
   </div>
 </div> -->
 <!--End Body -->
-<div class="modal-dialog">
+<div class="modal-dialog ">
       <div class="modal-content">
          <div class="modal-body">
             <div class="row">
-               <div class="col-sm-6">
-                  <div class="image">
-                     <img src="<?php echo $products->Image ?>" alt="" />
-                  </div>
-               </div>
-               <div class="col-sm-6">
-                  <h2><?=$products->ProductName ?></h2>
-                  <h3 class="top10"><?=$products->Price ?></h3>
+                <div class="col-sm-6">
+                    <div class="image">
+                       <img name = "image" src="<?php echo $products->Image ?>" alt="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <h2 name = "name"><?=$products->ProductName ?></h2>
+                  <h3 class="top10"><?=$products->Price ?>đ</h3>
                   <p class="top30 bottom30"><?=$products->Description ?></p>
-                  <div class="top30 bottom30">Size:</div>
-                  <div>
-                    <select name="size">
-                      <option value="<?=$products->Size ?>">
-                        
-                      </option>
-                    </select>  
-                  </div>
-                  <a class="btn btn_colored btn_rounded button_moema icon-drop" href="#."> <i class="icon-icons102"></i> Add to Cart</a>
+                <form action="<?=getUrl('add-to-cart') ?>" method="post" accept-charset="utf-8">
+                    <input type="hidden" name="id" value="<?php echo $products->ProductID ?>" placeholder="">
+                    <div class="top30 bottom15">Size:
+                      <select name = "size">
+                        <?php foreach ($s as $value): ?> 
+                          <option value="<?=$value->Value?>"><?=$value->Value ?></option>
+                        <?php endforeach ?>
+                      </select>
+                    </div>
+                    <div class="top15 bottom20">Color:
+                      <select name = "color">
+                        <?php foreach ($c as $value): ?> 
+                          <option value="<?=$value->Value?>"><?=$value->Value ?></option>
+                        <?php endforeach ?>
+                      </select>
+                    </div>
+                    <div>
+                      <button type = "submit" class="btn btn_colored btn_rounded button_moema icon-drop" > <i class="icon-icons102"></i>Add to Cart</button>
+                    </div> 
                </div>
+              </form>
             </div>
          </div>
       </div>

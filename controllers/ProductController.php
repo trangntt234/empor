@@ -8,8 +8,10 @@ class ProductController
 	function detail()
 	{
 		$products = Product::find($_GET['id']);
-		$s = Product::selectSize($_GET['id']);die;
+		$s = $products->selectSize($_GET['id']);
+		$c = $products->selectColor($_GET['id']);
 		include_once 'views/client/product-detail.php';
 	}
+	
 }
 ?>

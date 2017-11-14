@@ -102,6 +102,15 @@
 			if(count($rs) > 0) return $rs[0];
 			return null;
 		}
+		public static function findID($email){
+			$model = new static();
+			$sql = "select * from $model->tableName where Email = '$email'";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			if(count($rs) > 0) return $rs[0];
+			return null;
+		}
 		public static function login($email,$password){
 			$model = new static();
 			$sql = "select * from $model->tableName where Email = '$email' and Password = '$password'";

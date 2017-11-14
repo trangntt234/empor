@@ -1,5 +1,6 @@
 <?php 
 session_start();
+/*session_destroy();*/
 $url = isset($_GET['url']) == true ? $_GET['url'] : "/";
 function getUrl($path = ""){
 	$currentUrlpath = $GLOBALS['url'];

@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Empor | Home</title>
+
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,8 @@
 <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="icon" href="images/favicon.png">
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -501,122 +503,3 @@
 <main>
 
 <!-- Slider Start -->
-<section id="rev_slider_wrapper" class="rev_slider"  data-version="5.0">
-  <div id="rev_digit" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-    <ul>
-      <!-- SLIDE  -->
-      <li data-index="rs-129" data-transition="fade" data-slotamount="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-title="<span>01</span>">
-        <!-- MAIN IMAGE -->
-        <img src="images/home-banner.jpg" alt="" data-bgparallax="12" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-        <!-- LAYERS -->
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['340','240','140','140']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1300"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <h4 class="text-capitalize">Best Selling Products Our all the World</h4>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['375','275','175','185']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1600"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">;">
-          <h1 class="text-uppercase">Take a Look at Our News</h1>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['455','355','255','265']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1800"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <a href="#." class="btn btn_default btn_rounded button_moema"> Shop Now</a>
-        </div>
-        
-      </li>
-      <li data-index="rs-130" data-transition="slideleft" data-slotamount="default" data-title="<span>02</span>">
-        <img src="images/home-banner2.jpg" alt="" data-bgparallax="12" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['340','240','140','140']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1300"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <h4 class="text-capitalize">Best Selling Products Our all the World</h4>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['375','275','175','185']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1600"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <h1 class="text-uppercase">Birdy A classic Memphis</h1>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['455','355','255','265']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1800"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <a href="#." class="btn btn_default btn_rounded button_moema"> Shop Now</a>
-        </div>
-      </li>
-      <li data-index="rs-131" data-transition="slideleft" data-title="<span>03</span>">
-        <img src="images/home-banner3.jpg" alt="" data-bgparallax="12" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['340','240','140','140']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1300"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <h4 class="text-capitalize">Best Selling Products Our all the World</h4>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['375','275','175','185']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1600"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <h1 class="text-uppercase">Take a Look at Our News</h1>
-        </div>
-        <div class="slider-caption tp-caption tp-resizeme"
-          data-x="['center','center','center','center']" data-hoffset="['0','0','0','15']" 
-          data-y="['455','355','255','265']" data-voffset="['0','0','0','0']" 
-          data-responsive_offset="on"
-          data-visibility="['on','on','on','on']"  
-          data-start="1800"
-          data-transform_idle="o:1;"
-          data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
-          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-          <a href="#." class="btn btn_default btn_rounded button_moema"> Shop Now</a>
-        </div>
-      </li>
-      <!-- SLIDE  -->
-    </ul>
-  </div>
-</section>

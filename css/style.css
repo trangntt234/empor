@@ -823,8 +823,8 @@ a.back-to:focus{
 	padding:20px;
 }
 #pageload-modal .modal-content {
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  /* -webkit-border-radius: 0;
+  border-radius: 0; */
   padding:4rem 2.5rem;
 }
 #pageload-modal .close {
@@ -1955,7 +1955,7 @@ header.transparent .navbar-fixed.no-background .empr_nav li a{
   vertical-align: middle;
 }
 .shop_buttons a.add_emp {
-  background: #252525;
+  background: #ff4157;
 }
 .shop_buttons a.ext_emp{
 	background:#ff4157;
@@ -1991,7 +1991,7 @@ header.transparent .navbar-fixed.no-background .empr_nav li a{
   right: 15px;
 }
 .product_caption h6 {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 5px;
 	font-family: 'Montserrat';
@@ -2151,8 +2151,7 @@ header.transparent .navbar-fixed.no-background .empr_nav li a{
 
 /*QUICK View*/
 .modal-dialog {
-	margin: 5rem auto;
-	width: 750px;
+	width: 850px;
 	max-width: 90%;
 }
 .modal.fade .modal-dialog {
