@@ -43,6 +43,7 @@ class CustomRoute
 				$ctl = new CartController();
 				$ctl->addToCart();
 				break;
+			
 			default:
 				echo "<h1>Not found!</h1>";
 				break;

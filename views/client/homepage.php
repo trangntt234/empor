@@ -322,7 +322,7 @@
             <div class="ptags"><span class="hot"> Hot </span></div>
             <img src="<?php echo $p->Image ?>"  >
             <div class="shop_buttons">
-             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $p->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> See product detail </a>
+             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $p->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> Xem chi tiết</a>
             </div>
           </div>
           <div class="product_caption padding_b">
@@ -343,7 +343,7 @@
             <div class="ptags"><span class="new"> New </span></div>
             <img src="<?php echo $pN->Image ?>"  >
             <div class="shop_buttons">
-             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $pN->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> See product detail </a>
+             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $pN->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> Xem chi tiết
             </div>
           </div>
           <div class="product_caption padding_b">
@@ -362,17 +362,15 @@
         <div class="cbp-item" style = "width: 299px;height:500px; top:20px">
           <div class="image">
             <div class="ptags"><span class="off"> <?=$pD->Discount ?>% </span></div>
-            <img src="<?php echo $pD->Image ?>"  >
+            <img src="<?php echo $pD->Image ?>">
             <div class="shop_buttons">
-             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $pD->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> See product detail </a>
+             <a class="add_emp" href="<?php echo getUrl('product-detail') ?>?id=<?php echo $pD->ProductID ?>"><i style="margin-right:10px" class="icon-expand"></i> Xem chi tiết</a>
             </div>
           </div>
           <div class="product_caption padding_b">
-            <a href="#.">
-              <h6 class="bottom10">
-                <?=$pD->ProductName ?>
-              </h6>
-            </a>
+            <h6 class="bottom10">
+              <?=$pD->ProductName ?>
+            </h6>
             <p class="p-price">
                 <?=$pD->Price ?>đ
             </p>

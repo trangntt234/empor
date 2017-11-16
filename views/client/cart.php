@@ -1,4 +1,12 @@
 <?php
+  if(isset($_GET['id']) && isset($_GET['sl'])){
+    $_SESSION['giohang'][$_GET['id']]['soluong'] = $_GET['sl'];
+  }
+  if(isset($_GET['id']) && isset($_GET['action'])){
+     unset($_SESSION['giohang'][$_GET['id']]);
+  }
+?>
+<?php
   include_once 'sub/header.php';
 ?>
 <title>Empor | Giỏ hàng </title>
@@ -20,8 +28,10 @@
      </tr> 
     </thead> 
     <tbody>
-    <?php for ($i=0; $i < count($_SESSION['giohang']); $i++) { 
-       $p = Product::find($_SESSION['giohang'][$i]['id']);
+    <?php 
+      $total = 0;
+      foreach ($_SESSION['giohang'] as $key => $value) {
+        $p = Product::find($_SESSION['giohang'][$key]['id']);
     ?> 
       <tr> 
         <td data-th="Product"> 
@@ -33,13 +43,13 @@
            </div> 
           </div> 
         </td> 
-        <td style="vertical-align: middle;" data-th="Price"><?=$_SESSION['giohang'][$i]['color'] ?></td> 
-        <td style="vertical-align: middle;" data-th="Price"><?=$_SESSION['giohang'][$i]['size'] ?></td> 
+        <td style="vertical-align: middle;" data-th="Price"><?=$p->Color ?></td> 
+        <td style="vertical-align: middle;" data-th="Price"><?=$_SESSION['giohang'][$key]['size'] ?></td> 
         <td style="vertical-align: middle;" data-th="Price"><?=$p->Price ?>đ</td> 
         <td  style="vertical-align: middle;">
          
-          <select name="quatity" >
-            <option value=" <?=$_SESSION['giohang'][$i]['soluong'] ?>"> <?=$_SESSION['giohang'][$i]['soluong'] ?></option>
+          <select name="sl_<?=$key?>" id = "sl_<?=$key?>">
+            <option value=" <?=$_SESSION['giohang'][$key]['soluong'] ?>"> <?=$_SESSION['giohang'][$key]['soluong'] ?></option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -62,13 +72,13 @@
             <option value="20">20</option>
           </select>
         </td> 
-        <td style="vertical-align: middle;" data-th="Subtotal" class="text-center"><?php echo $p->Price*$_SESSION['giohang'][$i]['soluong'] ?></td> 
+        <td style="vertical-align: middle;" data-th="Subtotal" class="text-center"><?php echo $p->Price*$_SESSION['giohang'][$key]['soluong'] ?></td> 
         <?php 
-          $total += $p->Price*$_SESSION['giohang'][$i]['soluong'];
+          $total += $p->Price*$_SESSION['giohang'][$key]['soluong'];
         ?>
         <td style="vertical-align: middle;" class="actions" data-th="">
-          <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i></button> 
-          <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+          <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="updateItem(<?=$key?>)" title=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> 
+          <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="removeItem(<?=$key?>)" title=""><i class="fa fa-trash-o"></i></a> 
         </td> 
         </tr> 
       <?php } ?>
@@ -103,6 +113,19 @@
 <?php 
   include_once 'sub/js.php';
 ?>
+<script>
+  function updateItem(id){
+    var sl = document.getElementById("sl_<?=$key?>").value;
+    $.get("<?= getUrl('add-to-cart') ?>?id="+id+"&sl="+sl,function(data){
+      location.reload();
+    });
+  }
+  function removeItem(id){
+    $.get("<?= getUrl('add-to-cart') ?>?id="+id+"&action=remove",function(data){
+      location.reload();
+    });
+  }
+</script>
 </body>
 
 <!-- Mirrored from wahabali.com/work/empor/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Sep 2017 17:26:28 GMT -->
