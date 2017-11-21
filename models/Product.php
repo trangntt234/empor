@@ -11,12 +11,10 @@ class Product extends BaseModel
 		parent::__construct();
 	}*/
 	public function selectSize($id){
-		$sql = "SELECT attribute_values.Value
-						FROM products
-						JOIN product_attributes ON products.ProductID = product_attributes.ProductID
-						JOIN attribute_values ON product_attributes.AttributeValueID = attribute_values.AttributeValueID
-						JOIN attributes ON attributes.AttributeID = attribute_values.AttributeID
-						where products.ProductID = $id and attributes.AttributeName = 'size' ";
+		$sql = "SELECT sizes.SizeID, sizes.SizeName FROM sizes 
+									JOIN productsizes ON sizes.SizeID = productsizes.SizeID
+                                    JOIN products ON productsizes.ProductID = products.ProductID
+                                   	WHERE products.ProductID = $id";
 		$stmt = $this->connect->prepare($sql);
 		$stmt->execute();
 		$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($this));

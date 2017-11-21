@@ -23,7 +23,7 @@ class UserController
 		else{
 			$message = "Tài khoản hoặc mật khẩu không tồn tại";
 		}
-		include_once 'views/client/login.php';
+		include_once 'views/client/auth/login.php';
 	}
 	function save_register(){
 		$message = "";
@@ -57,7 +57,7 @@ class UserController
 		}
 		else if($password != $comfirmPassword){
 			$message = "Vui lòng kiểm tra mật khẩu khớp";
-			include_once 'views/client/register.php';
+			include_once 'views/client/auth/register.php';
 		}		
 		else{
 			$models = new User();

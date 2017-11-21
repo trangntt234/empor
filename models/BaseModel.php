@@ -103,6 +103,46 @@
 			return null;
 		}
 		
+		public static function getSubCate($id){
+			$model = new static();
+			$sql = "select * from $model->tableName where ParentID = $id";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			return $rs;
+		}
+		public static function getCate(){
+			$model = new static();
+			$sql = "SELECT * FROM $model->tableName WHERE IsMenu = 1";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			return $rs;
+		}
+		public static function getHotProduct($id){
+			$model = new static();
+			$sql = "SELECT * FROM $model->tableName WHERE CategoryID = $id and Hot = 1";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			return $rs;
+		}
+		public static function getDiscountProduct($id){
+			$model = new static();
+			$sql = "SELECT * FROM $model->tableName WHERE CategoryID = $id and Discount != 0";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			return $rs;
+		}
+		public static function getNewProduct($id){
+			$model = new static();
+			$sql = "SELECT * FROM $model->tableName WHERE CategoryID = $id and New = 1";
+			$stmt = $model->connect->prepare($sql);
+			$stmt->execute();
+			$rs = $stmt->fetchAll(PDO::FETCH_CLASS, get_class($model));
+			return $rs;
+		}
 		public static function login($email,$password){
 			$model = new static();
 			$sql = "select * from $model->tableName where Email = '$email' and Password = '$password'";

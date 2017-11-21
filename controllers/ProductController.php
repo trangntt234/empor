@@ -1,5 +1,6 @@
 <?php
 require_once 'models/Product.php';
+require_once 'models/Category.php';
 /**
 * 
 */
@@ -7,6 +8,7 @@ class ProductController
 {
 	function detail()
 	{
+		$cate = Category::getCate();
 		$products = Product::find($_GET['id']);
 		$s = $products->selectSize($_GET['id']);
 		$combined = $products->selectCombined($_GET['id']);

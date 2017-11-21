@@ -1,5 +1,6 @@
 <?php
 require_once 'models/Product.php';
+require_once 'models/Category.php';
 /**
 * 
 */
@@ -8,6 +9,7 @@ class CartController
 	
 	function addToCart()
 	{  
+        $cate = Category::getCate();
         if(isset($_POST['id'])){
             $id = $_POST['id'];
             $size = $_POST['size'];

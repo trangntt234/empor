@@ -50,7 +50,7 @@
             <div class="top30 bottom15">Size:
               <select name = "size">
                 <?php foreach ($s as $value): ?> 
-                  <option value="<?=$value->Value?>"><?=$value->Value ?></option>
+                  <option value="<?=$value->SizeName?>"><?=$value->SizeName ?></option>
                 <?php endforeach ?>
               </select>
             </div>

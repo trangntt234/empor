@@ -78,46 +78,6 @@
               <a class="login_toggle" href="<?=getUrl('login') ?>">Login</a>
             </li>
           <?php endif ?>
-          
-          <!-- <li>
-            <div class="emp_entry">
-              <div class="emp_title">English</div>
-              <div class="list">
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/us.png" alt="us">United State
-                </a>
-                <div class="list-entry">
-                  Change currency:
-                  <form>
-                    <div class="currency">
-                      <select name="countrychose" id="countrychose">
-                        <option>$ USD</option>
-                        <option>$ USD</option>
-                        <option>$ USD$ USD</option>
-                        <option>$ USD</option>
-                      </select>
-                    </div>
-                  </form>
-                  Other Countries
-                </div>
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/uk.png" alt="uk"> United Kingdom
-                </a>
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/france.png" alt="France"> France
-                </a>
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/australia.png" alt="Australia"> Australia
-                </a>
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/italia.png" alt="Italia"> Italia
-                </a>
-                <a class="list-entry" href="javascript:void(0)">
-                  <img src="images/duc.png" alt="Deutschland"> Deutschland
-                </a>
-              </div>
-            </div>
-          </li> -->
         <div class="cols">
           <ul class="empr_nav">
             <!-- <li><a href="#."><i class="icon-heart3"></i></a></li> -->
@@ -139,182 +99,21 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-menu">
+          
         <ul class="nav navbar-nav navbar-left" data-in="fadeIn" data-out="fadeOut">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-            <ul class="dropdown-menu">
-              <li><a href="index-2.html">Home Shop 1</a></li>
-              <li><a href="index2.html">Home Shop 2</a></li>
-              <li><a href="index3.html">Home V3 — Collection: Men</a></li>
-              <li><a href="index4.html">Home V4 — Collection: Women</a></li>
-              <li><a href="index5.html">Home V5 — Collections / Parallax</a></li>
-              <li><a href="index6.html">Home V6 — Simple eCommerce</a></li>
-              <li><a href="shop4.html">Home V7 — Portfolio</a></li>
-              <li><a href="#">Home V8 — Startup Site</a></li>
-            </ul>
-          </li>
-          <li class="dropdown megamenu-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Styles</a>
-            <ul class="dropdown-menu half-content" role="menu">
-              <li>
-                <div class="row">
-                  <div class="col-menu col-md-5">
-                    <h6 class="title">Layouts</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop1.html">Home Shop 1</a></li>
-                        <li><a href="shop2.html">Home Shop 2</a></li>
-                        <li><a href="shop3.html">Home Shop 3</a></li>
-                        <li><a href="shop4.html">Home Shop 4</a></li>
-                        <li><a href="shop5.html">Home Shop 5</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-6 -->
-                  <div class="col-menu col-md-7">
-                    <h6 class="title">Layouts</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-detail2.html">Shop — Catalog</a></li>
-                        <li><a href="shop4.html">Shop — Categories Grid</a></li>
-                        <li><a href="shop-detail3.html">Shop — Product Category</a></li>
-                        <li><a href="shop3.html">Shop — with Sidebar</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-6 -->
-                </div>
-                <!-- end row -->
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown megamenu-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-            <ul class="dropdown-menu megamenu-content" role="menu">
-              <li>
-                <div class="row">
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Categories</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-detail2.html">Shop — Catalog</a></li>
-                        <li><a href="shop-detail1.html">Shop — Categories Grid</a></li>
-                        <li><a href="shop5.html">Shop — Product Category</a></li>
-                        <li><a href="shop3.html">Shop — with Sidebar</a></li>
-                        <li><a href="wishlist.html">Shopping Cart</a></li>
-                        <li><a href="shop-cart.html">Checkout</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Products demos</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-recent1.html">Shop — Catalog</a></li>
-                        <li><a href="shop-recent2.html">Shop — Categories Grid</a></li>
-                        <li><a href="shop-recent3.html">Shop — with Sidebar</a></li>
-                        <li><a href="wishlist.html">Shopping Cart</a></li>
-                        <li><a href="shop-cart.html">Checkout</a></li>
-                        <li><a href="shop-cart.html">Order Tracking</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Shop Pages</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-detail1.html">Shop — Categories Grid</a></li>
-                        <li><a href="shop5.html">Shop — Product Category</a></li>
-                        <li><a href="shop3.html">Shop — with Sidebar</a></li>
-                        <li><a href="wishlist.html">Shopping Cart</a></li>
-                        <li><a href="shop-cart.html">Order Tracking</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-menu col-md-3">
-                    <div class="content">
-                      <div class="image">
-                        <img src="images/menu.jpg" alt="menu">
-                        <div class="centered text-center">
-                          <h4 class="text-uppercase">Deal of the week</h4>
-                          <a href="#." class="btn_shop text-uppercase">Shop now</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-              </li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown megamenu-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-            <ul class="dropdown-menu megamenu-content" role="menu">
-              <li>
-                <div class="row">
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Categories</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-recent1.html">Shop — Catalog</a></li>
-                        <li><a href="shop-recent2.html">Shop — Categories Grid</a></li>
-                        <li><a href="shop5.html">Shop — Product Category</a></li>
-                        <li><a href="shop-recent3.html">Shop — with Sidebar</a></li>
-                        <li><a href="wishlist.html">Shopping Cart</a></li>
-                        <li><a href="shop-cart.html">Checkout</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Products demos</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="shop-recent1.html">Shop — Catalog</a></li>
-                        <li><a href="#">Shop — Categories Grid</a></li>
-                        <li><a href="#">Shop — with Sidebar</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="shop-cart.html">Order Tracking</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Other Pages</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="contact.html">Contact  — V1</a></li>
-                        <li><a href="contact2.html">Contact  — V2</a></li>
-                        <li><a href="contact3.html">Contact  — V3</a></li>
-                        <li><a href="faq.html">Faq's</a></li>
-                        <li><a href="404.html">404</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-menu col-md-3">
-                    <h6 class="title">Other Pages</h6>
-                    <div class="content">
-                      <ul class="menu-col">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="about-designer.html">About Designer</a></li>
-                        <li><a href="author-post.html">Author Posts</a></li>
-                        <li><a href="wishlist.html">Wishlist</a></li>
-                        <li><a href="wishlist-empty.html">Wishlist Empty</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Demos</a></li>
+          <?php foreach ($cate as $key => $c): ?>
+            <li class="dropdown">
+              <a href="<?=getUrl('/') ?>" class="dropdown-toggle" data-toggle="dropdown"><?=$c->CategoryName ?></a>
+                <ul class="dropdown-menu">
+                  <?php $subcate = Category::getSubCate($c->CategoryID);
+                    foreach ($subcate as $key => $sc): ?>
+                     <li><a href="<?php echo getUrl('danh-muc-san-pham') ?>?id=<?= $sc->CategoryID ?>"><?=$sc->CategoryName?></a></li>
+                  <?php endforeach ?>
+                </ul>
+            </li>
+          <?php endforeach ?>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Demos</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -324,140 +123,7 @@
 <!--HEADER ENDS-->
 
    
-<!--Shopping Cart-->
-<div id="sidebar-wrapper">
-   <ul class="nav sidebar-nav">
-      <li class="tablecart">
-         <div class="photo">
-            <a href="#">
-               <img src="images/tablecart1.jpg" alt="">
-            </a>
-         </div>
 
-         <div class="cartbody">
-            <h5>Little Barrel in White</h5>
-            <span>1 × $1,288.00</span>
-            <i class="fa fa-close cross"></i>
-         </div>
-      </li>
-      <li class="tablecart">
-         <div class="photo">
-            <a href="#">
-               <img src="images/tablecart1.jpg" alt="">
-            </a>
-         </div>
-         <div class="cartbody">
-            <h5>Little Barrel in White</h5>
-            <span>1 × $1,288.00</span>
-            <i class="fa fa-close cross"></i>
-         </div>
-      </li>
-      <li class="tablecart">
-         <div class="photo">
-            <a href="#">
-               <img src="images/tablecart1.jpg" alt="">
-            </a>
-         </div>
-         <div class="cartbody">
-            <h5>Little Barrel in White</h5>
-            <span>1 × $1,288.00</span>
-            <i class="fa fa-close cross"></i>
-         </div>
-      </li>
-      <li class="text-center margin40 top40">
-         <div class="image-cart bottom10">
-            <img src="images/shopping-cart.png" alt="">
-         </div>
-         <h4 class="text-uppercase">no products in the cart.</h4>
-      </li>
-   </ul>
-   <div class="cart-bottom clearfix">
-      <h5 class="pull-left top10 bottom10">SUBTOTAL</h5>
-      <h5 class="pull-right top10 bottom10">$1,798.00</h5>
-      <div class="clearfix"></div>
-      <a class="btn btn_dark button_moema">view cart</a>
-      <a class="btn btn_colored button_moema">Checkout</a>
-   </div>
-</div>
-   <!--Shopping Cart ends-->
-     
-
-<!-- Login starts -->
-<div class="login_container fullscreen">
-  <button class="close_login"><i class="fa fa-close"></i></button>
-  <div class="row">
-    <div class="col-sm-6">
-       <div class="image"><img src="images/login-container.jpg" alt=""></div>
-    </div>
-    <div class="col-sm-6">
-      <div class="contentform">
-    <ol class="breadcrumb_simple text-center heading_space">
-      <li><a href="#">My Account</a></li>
-      <li><a href="#">My Wishlist</a></li>
-      <li class="active">My Cart</li>
-      <li><a href="#">Checkout</a></li>
-    </ol>
-    <div class="logintabbed bottom30">
-      <ul class="nav nav-tabs nav-justified heading_space" role="tablist">
-        <li role="presentation" class="active"><a href="#registered" aria-controls="registered" role="tab" data-toggle="tab">Already Registered</a></li>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">New to empor ?</a></li>
-      </ul>
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="registered">
-          <form class="callus">
-            <div class="form-group">
-              <label>EMAIL ADDRESS</label>
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label>PASSWORD </label>
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="checkbox" name="check-box">
-                  <span>Remember Me</span>
-                </div>
-              </div>
-              <div class="col-sm-6 text-right">
-                <a href="#" class="lost-pass">Lost your password?</a>
-              </div>
-            </div>
-            <button type="submit" class="btn btn_dark btn_full">login</button>
-          </form>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="profile">
-          <form class="callus">
-            <div class="form-group">
-              <label>Name </label>
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label>EMAIL ADDRESS</label>
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label>PASSWORD </label>
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn_dark btn_full">Register</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="hr_head"><span>OR</span></div>
-    <div class="share_with text-center top30">
-      <h5 class="bottom20">SIGN IN WITH...</h5>
-      <a href="#." class="facebook"><i class="icon-facebook-1"></i> Facebook </a>
-      <a href="#." class="twitter"><i class="icon-twitter-1"></i> twitter</a>
-      <a href="#." class="google"><i class="icon-google4"></i> google +</a>
-    </div>
-  </div>
-    </div>
-  </div>
-</div>
-<!-- Login end -->
 
 
 <!--Search-->
@@ -469,36 +135,6 @@
   </form>
 </div>
  <!--Search Ends-->
-
-<!--Page Load Popup-->
-<!-- <div id="pageload-modal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <div class="modal-body text-center">
-        <h3 class="bottom10 text-uppercase">Empor Offer</h3>
-        <p class="bottom40">get <span class="default_color">25%</span> off your First order. Join our newsletter to receive the
-          latest updates and promotions
-        </p>
-        <form class="bottom40">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search&hellip;">
-            <span class="input-group-btn">
-            <button type="button"><i class="icon-arrow-right2"></i></button>
-            </span>
-          </div>
-        </form>
-        <ul class="social">
-          <li><a href="#."><i class="icon-facebook-1"></i></a></li>
-          <li><a href="#."><i class="icon-pinterest"></i></a></li>
-          <li><a href="#."><i class="icon-twitter"></i></a></li>
-          <li><a href="#."><i class="icon-google4"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!--Page Load Popup-->
 
 <main>
 

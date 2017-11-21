@@ -6,6 +6,7 @@ require_once 'controllers/HomeController.php';
 require_once 'controllers/ProductController.php';
 require_once 'controllers/UserController.php';
 require_once 'controllers/CartController.php';
+require_once 'controllers/CategoryController.php';
 class CustomRoute
 {
 	static function clientRoute($url)
@@ -43,7 +44,10 @@ class CustomRoute
 				$ctl = new CartController();
 				$ctl->addToCart();
 				break;
-			
+			case 'danh-muc-san-pham':
+				$ctl = new CategoryController();
+				$ctl->index();
+				break;
 			default:
 				echo "<h1>Not found!</h1>";
 				break;
