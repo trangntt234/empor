@@ -10,17 +10,17 @@
 
 
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/empor-icon.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css">
-<link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="css/settings.css">
-<link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="public/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/empor-icon.css">
+<link rel="stylesheet" type="text/css" href="public/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/bootstrap-slider.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/cubeportfolio.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/settings.css">
+<link rel="stylesheet" type="text/css" href="public/css/bootsnav.css">
+<link rel="stylesheet" type="text/css" href="public/css/style.css">
 <link rel="icon" href="images/favicon.png">
 
 
@@ -83,7 +83,7 @@
             <!-- <li><a href="#."><i class="icon-heart3"></i></a></li> -->
             <li class="search_btn"><i class="icon-icons185"></i></li>
             <!-- <li><a href="#."><i class="icon-icons9"></i></a></li> -->
-            <li><a href="javascript:void(0)" class="hamburger is-closed" data-toggle="offcanvas"><i class="icon-icons102"></i></a>
+            <li><a href="<?=getUrl('add-to-cart') ?>" class="hamburger is-closed" ><i class="icon-icons102"></i></a>
             </li>
           </ul>
         </div>
@@ -93,7 +93,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i class="fa fa-bars"></i>
             </button>
-        <a class="navbar-brand" href="<?= getUrl('/') ?>"><img src="images/logo.png" class="logo" alt=""></a>
+        <a class="navbar-brand" href="<?= getUrl('/') ?>"><img src="public/images/logo.png" class="logo" alt=""></a>
       </div>
       <!-- End Header Navigation -->
 
@@ -129,8 +129,8 @@
 <!--Search-->
 <div id="search">
   <button type="button" class="close">×</button>
-  <form class="centered clearfix">
-    <input type="search" value="" placeholder="Search here...."  required/>
+  <form class="centered clearfix" action="<?= getUrl('search-product') ?>" method = "POST">
+    <input type="search" name = "keyword" value="" placeholder="Search here...."  required/>
     <button type="submit" class="btn-search"><i class="icon-icons185"></i></button>
   </form>
 </div>

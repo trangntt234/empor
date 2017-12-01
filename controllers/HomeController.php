@@ -15,5 +15,12 @@ class HomeController
 		$cate = Category::getCate();
 		include_once 'views/client/homepage.php';
 	}
+	function search(){
+		$cate = Category::getCate();
+		$keyword = $_POST['keyword'];
+		$products = Product::search($keyword);
+		include_once 'views/client/search.php';
+		
+	}
 }
 ?>

@@ -14,6 +14,10 @@
 <link rel="stylesheet" type = "text/css" href="css/style_cart.css">
 <section>
 <h2 class="text-center">Giỏ hàng</h2>
+<?php if(empty($_SESSION['giohang'])): ?>
+  <h3 style="margin-left: 40px">Giỏ hàng rỗng</h3>
+  <a href="<?= getUrl('/')?>" style= "margin-left: 40px"> Tiếp tục mua hàng</a>
+<?php else: ?>
 <div class="container"> 
   <table id="cart" class="table table-hover table-condensed"> 
     <thead> 
@@ -23,8 +27,8 @@
       <th style="width:10%">Size</th> 
       <th style="width:10%">Giá</th> 
       <th style="width:7%">Số lượng</th> 
-      <th style="width:20%" class="text-center">Thành tiền</th> 
-      <th style="width:10%"> </th> 
+      <th style="width:15%" class="text-center">Thành tiền</th> 
+      <th style="width:15%"> </th> 
      </tr> 
     </thead> 
     <tbody>
@@ -78,9 +82,9 @@
         ?>
         <td style="vertical-align: middle;" class="actions" data-th="">
           <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="updateItem(<?=$key?>)" title=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> 
-          <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="removeItem(<?=$key?>)" title=""><i class="fa fa-trash-o"></i></a> 
+          <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="confirmRemove('<?= getUrl('add-to-cart') ?>?id=<?= $key ?>&action=remove')" title=""><i class="fa fa-trash-o"></i></a> 
         </td> 
-        </tr> 
+      </tr> 
       <?php } ?>
       <tfoot> 
         <tr> 
@@ -94,13 +98,15 @@
               ?>
             </strong>
           </td> 
-          <td style="margin-top: 20px" ><a href="" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+
+          <td style="margin-top: 20px" ><a href="<?= getUrl('thanh-toan') ?>" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
           </td> 
         </tr> 
       </tfoot> 
     </tbody>  
   </table>
 </div>
+<?php endif; ?>
 </main>
 </section>
 <!--Footer Starts-->
@@ -120,11 +126,26 @@
       location.reload();
     });
   }
-  function removeItem(id){
-    $.get("<?= getUrl('add-to-cart') ?>?id="+id+"&action=remove",function(data){
-      location.reload();
-    });
-  }
+  function confirmRemove(url){
+      bootbox.confirm({
+          message: "Bạn có chắc chắn muốn xoá?",
+          buttons: {
+              confirm: {
+                  label: 'Có',
+                  className: 'btn-danger'
+              },
+              cancel: {
+                  label: 'Không',
+                  className: 'btn-primary'
+              }
+          },
+          callback: function (result) {
+              if(result){
+                window.location.href = url;
+              }
+          }
+      });
+    }
 </script>
 </body>
 

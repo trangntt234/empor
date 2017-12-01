@@ -41,19 +41,5 @@ class CartController
         include_once 'views/client/cart.php';
 
     }
-    function remove(){
-        if(isset($_GET['key'])){ 
-            $keyDelete = $_GET['key'];
-            foreach ($_SESSION['giohang'] as $key => $value) {
-                if(array_key_exists($keyDelete,$_SESSION['giohang'])){
-                    unset($_SESSION['giohang'][$keyDelete]);
-                }
-            }
-            foreach ($_SESSION['giohang'] as $key => $value) {
-                echo "Key: $key <br>";
-            }
-            include_once 'views/client/cart.php';
-        }
-    }
 }
 ?>
